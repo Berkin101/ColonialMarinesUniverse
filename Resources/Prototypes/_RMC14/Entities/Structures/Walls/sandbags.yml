@@ -6,7 +6,6 @@
   components:
   - type: BarricadeSandbag
   - type: Climbable
-
   - type: MeleeSound
     soundGroups:
       Brute:
@@ -61,12 +60,20 @@
     fixtures:
       fix1:
         shape: !type:PhysShapeAabb
-          bounds: "-0.49,-0.45,0.49,-0.15"
+          bounds: "-0.35,-0.45,0.35,-0.35"
+        mask:
+        - FullTileMask
+        layer:
+        - TableLayer
+        - BarricadeImpassable # type BarricadeBlock seems to not work, this is an alternative
+      fix2:                  # changed bullet collision shape (less likely to hit the sandbag, but still possible), need better fix. Also adjesent sandbags still get hit (the collision problems are also found in normal barricades).
+        shape: !type:PhysShapeAabb
+          bounds: "-0.30,-0.60,0.30,-0.50"
         mask:
         - FullTileMask
         layer:
         - BulletImpassable
-  - type: BarricadeBlock
+  - type: BarricadeBlock # I am guessing this is meant to block the player from going trough (it doesnt work), i have added - BarricadeImpassable above
     bidirectional: true
     blocking: 75
 
