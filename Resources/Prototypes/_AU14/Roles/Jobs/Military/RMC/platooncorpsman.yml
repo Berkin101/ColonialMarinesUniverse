@@ -4,7 +4,13 @@
   name: au14-job-name-govforplatooncorpsmanRMC
   description: au14-job-description-govforplatooncorpsman
   setPreference: true
-  playTimeTracker: AU14JobGOVFORPlatoonCorpsmanRMC
+  requirements:
+  - !type:TraitsRequirement
+    inverted: true
+    traits:
+    - Epilepsy
+    - NonResuscitable
+  playTimeTracker: AU14JobGOVFORPlatoonCorpsman
   ranks:
     RMC_Corporal:
     - !type:RoleTimeRequirement
@@ -48,7 +54,3 @@
         sprite: _RMC14/Interface/map_blips.rsi
         state: synth
   hidden: false
-
-- type: playTimeTracker
-  id: AU14JobGOVFORPlatoonCorpsmanRMC
-  isHumanoid: true

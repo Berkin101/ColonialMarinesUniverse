@@ -5,6 +5,12 @@
   description: au14-job-description-clfmachinegunner
   setPreference: true
   playTimeTracker: AU14JobCLFMachineGunner
+  requirements:
+  - !type:TraitsRequirement
+    inverted: true
+    traits:
+    - NonResuscitable
+    - Epilepsy
   ranks:
     RMCRankCivilian: []
   startingGear: AU14GearCLFMachineGunner

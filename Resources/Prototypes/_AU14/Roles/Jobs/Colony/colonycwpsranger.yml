@@ -5,6 +5,13 @@
   description: au14-job-description-civiliancwpsranger
   setPreference: true
   canBeAntag: false
+  requirements:
+  - !type:AgeRequirement
+    requiredAge: 21
+  - !type:TraitsRequirement
+    inverted: true
+    traits:
+    - Epilepsy
   playTimeTracker: AU14JobCivilianCWPSRanger
   ranks:
     AU14RankCWPSSeniorRanger:

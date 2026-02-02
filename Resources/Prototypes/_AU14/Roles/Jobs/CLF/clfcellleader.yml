@@ -5,6 +5,12 @@
   description: au14-job-description-clfcellleader
   setPreference: true
   playTimeTracker: AU14JobCLFCellLeader
+  requirements:
+  - !type:TraitsRequirement
+    inverted: true
+    traits:
+    - NonResuscitable
+    - Epilepsy
   ranks:
     RMCRankCivilian: []
   startingGear: AU14GearCLFCellLeader

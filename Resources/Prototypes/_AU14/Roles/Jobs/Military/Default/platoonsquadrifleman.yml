@@ -5,6 +5,11 @@
   description: au14-job-description-govforsquadrifleman
   setPreference: true
   playTimeTracker: AU14JobGOVFORSquadRifleman
+  requirements:
+  - !type:TraitsRequirement
+    inverted: true
+    traits:
+    - Epilepsy
   ranks:
     RMCRankPrivateFirstClass:
     - !type:RoleTimeRequirement

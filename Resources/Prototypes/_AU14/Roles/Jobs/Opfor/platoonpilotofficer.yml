@@ -5,8 +5,17 @@
   description: au14-job-description-opfordspilot
   setPreference: true
   canBeAntag: false
-
-  playTimeTracker: AU14JobOpforDSPilot
+  requirements:
+  - !type:AgeRequirement
+    requiredAge: 25
+  - !type:TraitsRequirement
+    inverted: true
+    traits:
+    - SocialAnxietyHeavy
+    - FrontalLisp
+    - NonResuscitable
+    - Epilepsy
+  playTimeTracker: AU14JobGOVFORDSPilot
   ranks:
     RMCRankCaptain:
     - !type:RoleTimeRequirement
@@ -61,10 +70,6 @@
     job_id: AU14JobOpforDSPilot
   - type: Sprite
     state: syn_spawn
-
-- type: playTimeTracker
-  id: AU14JobOpforDSPilot
-  isHumanoid: true
 
 - type: startingGear
   id: AU14GearopforDSPilotDummy

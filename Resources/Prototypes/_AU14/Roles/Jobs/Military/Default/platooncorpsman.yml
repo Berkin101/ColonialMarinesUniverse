@@ -4,6 +4,12 @@
   name: au14-job-name-govforplatooncorpsman
   description: au14-job-description-govforplatooncorpsman
   setPreference: true
+  requirements:
+  - !type:TraitsRequirement
+    inverted: true
+    traits:
+    - Epilepsy
+    - NonResuscitable
   playTimeTracker: AU14JobGOVFORPlatoonCorpsman
   ranks:
     RMCRankCorporal:

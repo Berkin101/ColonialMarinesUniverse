@@ -9,6 +9,13 @@
   requirements:
   - !type:OverallPlaytimeRequirement
     time: 7200 # 2 hours
+  - !type:TraitsRequirement
+    inverted: true
+    traits:
+    - SocialAnxietyHeavy
+    - FrontalLisp
+    - NonResuscitable
+    - Epilepsy
   ranks:
     RMCRankChiefWarrantOfficer:
     - !type:RoleTimeRequirement

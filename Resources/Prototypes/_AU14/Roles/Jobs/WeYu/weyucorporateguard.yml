@@ -8,6 +8,13 @@
   startingGear: AU14GearWYGuard
   icon: "RMCJobIconBureauDeputy"
   requireAdminNotify: false
+  requirements:
+  - !type:AgeRequirement
+    requiredAge: 21
+  - !type:TraitsRequirement
+    inverted: true
+    traits:
+    - Epilepsy
   joinNotifyCrew: false
   supervisors: au14-job-supervisors-wy
   accessGroups:

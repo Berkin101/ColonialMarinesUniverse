@@ -4,6 +4,11 @@
   name: au14-job-name-usasfrecruiter
   description: au14-job-description-usasfrecruiter
   setPreference: true
+  requirements:
+  - !type:TraitsRequirement
+    inverted: true
+    traits:
+    - Epilepsy
   playTimeTracker: AU14JobCivilianUSASFRecruiter
   ranks:
     AU14RankUSASFTechnicalSergeant: []

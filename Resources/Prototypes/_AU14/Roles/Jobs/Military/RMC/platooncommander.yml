@@ -5,12 +5,12 @@
   description: au14-job-description-govforplatco
   setPreference: true
   canBeAntag: false
-  playTimeTracker: AU14JobGOVFORPlatCoRMC
+  playTimeTracker: AU14JobGOVFORPlatCo
   requirements:
   - !type:OverallPlaytimeRequirement
     time: 18000 # 5 hours
   - !type:AgeRequirement
-    requiredAge: 25
+    requiredAge: 30
   - !type:TraitsRequirement
     inverted: true
     traits:
@@ -67,7 +67,3 @@
         sprite: _RMC14/Interface/map_blips.rsi
         state: synth
   hidden: false
-
-- type: playTimeTracker
-  id: AU14JobGOVFORPlatCoRMC
-  isHumanoid: true

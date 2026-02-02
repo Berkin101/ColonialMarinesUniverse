@@ -5,7 +5,17 @@
   description: au14-job-description-govfordspilot
   setPreference: true
   canBeAntag: false
-  playTimeTracker: AU14JobGOVFORDSPilotRMC
+  requirements:
+  - !type:AgeRequirement
+    requiredAge: 25
+  - !type:TraitsRequirement
+    inverted: true
+    traits:
+    - SocialAnxietyHeavy
+    - FrontalLisp
+    - NonResuscitable
+    - Epilepsy
+  playTimeTracker: AU14JobGOVFORDSPilot
   ranks:
     RMC_Lieutenant:
     - !type:RoleTimeRequirement
@@ -55,7 +65,3 @@
         sprite: _RMC14/Interface/map_blips.rsi
         state: synth
   hidden: false
-
-- type: playTimeTracker
-  id: AU14JobGOVFORDSPilotRMC
-  isHumanoid: true

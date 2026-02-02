@@ -76,6 +76,25 @@
 
 - type: entity
   parent: [RMCAllowSuitStorageClothingArmorVest, RMCBaseArmor]
+  id: AU14CLFFlakVest
+  name: CLF flak vest
+  description: An imported flak vest that comes from your foreign buyer in the UPP. You have no idea the origin of it.
+  components:
+  - type: Sprite
+    sprite: _AU14/Clothing/LACN/Armor/lacncommandoarmor.rsi
+  - type: RMCArmorSpeedTier
+    speedTier: light
+  - type: ClothingSpeedModifier
+    walkModifier: .725
+    sprintModifier: .725
+  - type: CMArmor
+    bullet: 20
+    bio: 20
+    explosionArmor: 10
+  - type: CMHardArmor
+
+- type: entity
+  parent: [RMCAllowSuitStorageClothingArmorVest, RMCBaseArmor]
   id: AU14LACNCommandoArmorScout
   name: LACN BL-4L Scout Armor
   description: A set of ballistic armor used by the LACN naval commando scouts.

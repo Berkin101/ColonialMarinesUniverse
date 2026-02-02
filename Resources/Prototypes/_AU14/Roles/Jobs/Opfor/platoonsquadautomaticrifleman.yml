@@ -4,19 +4,25 @@
   name: au14-job-name-opforsquadautomaticrifleman
   description: au14-job-description-opforsquadautomaticrifleman
   setPreference: true
-  playTimeTracker: AU14JobOpforSquadAutomaticRifleman
+  playTimeTracker: AU14JobGOVFORSquadAutomaticRifleman
+  requirements:
+  - !type:TraitsRequirement
+    inverted: true
+    traits:
+    - Epilepsy
+    - NonResuscitable
   ranks:
     RMCRankCorporal:
     - !type:RoleTimeRequirement
-      role: AU14JobOpforSquadAutomaticRifleman
+      role: AU14JobGOVFORSquadAutomaticRifleman
       time: 216000 # 60 hours
     RMCRankLanceCorporal:
     - !type:RoleTimeRequirement
-      role: AU14JobOpforSquadAutomaticRifleman
+      role: AU14JobGOVFORSquadAutomaticRifleman
       time: 108000 # 30 hours
     RMCRankPrivateFirstClass:
     - !type:RoleTimeRequirement
-      role: AU14JobOpforSquadAutomaticRifleman
+      role: AU14JobGOVFORSquadAutomaticRifleman
       time: 54000 # 15 hours
     RMCRankPrivate: []
   startingGear: AU14GearopforSquadAutomaticRifleman
@@ -65,10 +71,6 @@
     job_id: AU14JobOpforSquadAutomaticRifleman
   - type: Sprite
     state: syn_spawn
-
-- type: playTimeTracker
-  id: AU14JobOpforSquadAutomaticRifleman
-  isHumanoid: true
 
 - type: startingGear
   id: AU14GearopforAutoRiflemanDummy

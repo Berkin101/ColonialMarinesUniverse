@@ -5,6 +5,12 @@
   description: au14-job-description-clfphysician
   setPreference: true
   playTimeTracker: AU14JobCLFPhysician
+  requirements:
+  - !type:TraitsRequirement
+    inverted: true
+    traits:
+    - NonResuscitable
+    - Epilepsy
   ranks:
     RMCRankCivilian: []
   startingGear: AU14GearCLFPhysician

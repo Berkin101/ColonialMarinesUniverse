@@ -6,6 +6,13 @@
   setPreference: true
   canBeAntag: false
   playTimeTracker: AU14JobCivilianCMBDeputy
+  requirements:
+  - !type:AgeRequirement
+    requiredAge: 21
+  - !type:TraitsRequirement
+    inverted: true
+    traits:
+    - Epilepsy
   ranks:
     AU14RankCMBSrDeputy:
     - !type:RoleTimeRequirement

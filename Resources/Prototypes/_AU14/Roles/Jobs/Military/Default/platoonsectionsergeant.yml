@@ -5,14 +5,22 @@
   description: au14-job-description-govforSSG
   setPreference: true
   playTimeTracker: AU14JobGOVFORSectionSergeant
+  requirements:
+  - !type:TraitsRequirement
+    inverted: true
+    traits:
+    - SocialAnxietyHeavy
+    - FrontalLisp
+    - NonResuscitable
+    - Epilepsy
   ranks:
     RMCRankMasterSergeant:
     - !type:RoleTimeRequirement
-      role: AU14JobOpforSectionSergeant
+      role: AU14JobGOVFORSectionSergeant
       time: 432000 # 120 hours
     RMCRankGunnerySergeant:
     - !type:RoleTimeRequirement
-      role: AU14JobOpforSectionSergeant
+      role: AU14JobGOVFORSectionSergeant
       time: 216000 # 60 hours
     RMCRankStaffSergeant: []
   startingGear: AU14GearGOVFORSectionSergeant

@@ -4,6 +4,13 @@
   name: au14-job-name-civiliannspaConstable
   description: au14-job-description-civiliannspaConstable
   setPreference: true
+  requirements:
+  - !type:AgeRequirement
+    requiredAge: 21
+  - !type:TraitsRequirement
+    inverted: true
+    traits:
+    - Epilepsy
   canBeAntag: false
   playTimeTracker: AU14JobCiviliannspaConstable
   ranks:

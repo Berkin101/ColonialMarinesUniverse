@@ -5,7 +5,15 @@
   description: au14-job-description-govforsquadsergeant
   setPreference: true
   canBeAntag: false
-  playTimeTracker: AU14JobGOVFORSquadSergeantRMC
+  requirements:
+  - !type:TraitsRequirement
+    inverted: true
+    traits:
+    - SocialAnxietyHeavy
+    - FrontalLisp
+    - NonResuscitable
+    - Epilepsy
+  playTimeTracker: AU14JobGOVFORSquadSergeant
   ranks:
     RMC_Sergeant:
     - !type:RoleTimeRequirement
@@ -47,7 +55,3 @@
         state: synth
     - type: MarineOrders
   hidden: false
-
-- type: playTimeTracker
-  id: AU14JobGOVFORSquadSergeantRMC
-  isHumanoid: true
