@@ -4,6 +4,7 @@
   name: dirt mound
   description: A pile of dirt that can be used as cover. Statistically better than thin air as cover.
   components:
+  - type: BarricadeDirt
   - type: Sprite
     color: "#4d3e36"
   - type: Destructible
@@ -20,3 +21,59 @@
   - type: XenoToggleChargingDamage
     sound:
       path: /Audio/Effects/Footsteps/hardbarefoot5.ogg #between hardbarefoot5 and carpet4
+
+- type: entity
+  parent: BaseItem
+  id: dirtPile
+  name: dirt pile
+  description: A pile of dirt, feels like dirt, smells like dirt, it even tastes like dirt. You may use it to build bigger piles of dirt called dirt mounds!
+  components:
+  - type: Item
+    size: Small
+  - type: Sprite
+    sprite: _RMC14/Objects/Misc/sandbags.rsi #placeholder sprite
+    color: "#4d3e36"
+    layers:
+    - state: sandbag_pile
+    - map: [ "acided" ]
+  - type: dirtPileItem
+  - type: Stack
+    stackType: dirtPile
+    count: 1
+  - type: InteractedBlacklist
+    blacklist:
+      components:
+      - Xeno
+
+- type: entity
+  parent: dirtPile
+  id: dirtPile50
+  suffix: "50"
+  components:
+  - type: Stack
+    stackType: dirtPile
+    count: 50
+
+- type: entity
+  parent: dirtPile
+  id: dirtPile25
+  suffix: "25"
+  components:
+  - type: Stack
+    stackType: dirtPile
+    count: 25
+
+- type: entity
+  parent: CMSandbagFull
+  id: CMSandbagFull5
+  suffix: "5"
+  components:
+  - type: Stack
+    stackType: CMSandbagFull
+    count: 5
+
+- type: stack
+  id: dirtPile
+  name: dirt piles
+  spawn: dirtPile
+  maxCount: 50
